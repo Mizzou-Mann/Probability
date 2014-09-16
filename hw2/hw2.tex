@@ -1,0 +1,143 @@
+% hw2.tex - Homework problem set 2 solution for Probability Theory class
+
+% Chanmann Lim - September 2014
+
+\documentclass[a4paper]{article}
+
+\usepackage[margin=1 in]{geometry}
+\usepackage{amsmath}
+
+\everymath{\displaystyle}
+
+\begin{document}
+\title{STAT 7750: Solutions to homework set 2}
+\author{Chanmann Lim}
+\date{\today}
+\maketitle
+
+\paragraph{Solution 1:}
+Chapter 1, Exercise 18 
+
+\paragraph{(a)} ~\\
+
+\indent Since $A \cap B$ and $A \cap B'$ are mutually exclusive, and $A = (A \cap B) \cap (A \cap B')$ \\
+\begin{align*}
+P(A) = P(A \cap B) + P(A \cap B') \\
+P(A \cap B') = P(A) - P(A \cap B)
+\end{align*}
+
+\paragraph{(b)} ~\\
+
+\indent Since $S = (A \cup B) \cap (A' \cap B')$ \\
+\begin{align*} 
+1 = P(A \cap B) + P(A' \cap B') \\
+P(A \cap B) = 1 - P(A' \cap B')
+\end{align*}
+
+\paragraph{Solution 2:}
+Chapter 1, Exercise 19
+
+\paragraph{(a)} ~\\
+\begin{align*} 
+P(B') &= 1 - P(B) \\
+      &= 1 - \frac{1}{3} \\
+      &= \frac{2}{3}
+\end{align*}
+
+\paragraph{(b)} ~\\
+\begin{align*} 
+P(A \cup B') &= 1 - P(B) + P(A \cap B) \\
+             &= 1 - \frac{1}{3} + \frac{1}{10} \\
+             &= \frac{30-10+3}{30} \\
+             &= \frac{23}{30}
+\end{align*}
+
+\paragraph{(c)} ~\\
+\begin{align*} 
+P(B \cup A') &= P(B) - P(B \cap A) \\
+             &= \frac{1}{3} - \frac{1}{10} \\
+             &= \frac{10-3}{30} \\
+             &= \frac{7}{30}
+\end{align*}
+
+\paragraph{(d)} ~\\
+\begin{align*} 
+P(A' \cup B') &= P(S) - P(A \cup B) \\
+              &= 1 - (P(A) + P(B) - P(A \cap B)) \\
+              &= 1 - (\frac{1}{3} + \frac{1}{3} - \frac{1}{10}) \\
+              &= 1 - \frac{10+10-3}{30} \\
+              &= 1 - \frac{17}{30} \\
+              &= \frac{13}{30}
+\end{align*}
+
+\paragraph{Solution 3:}
+Chapter 1, Exercise 20
+
+\paragraph{(a)} ~\\
+\begin{align*} 
+P(A \cup B \cup C) &= P(A) + P(B) + P(C) \\
+                   &= \frac{1}{2} + \frac{1}{8} + \frac{1}{4} \\
+                   &= \frac{4+1+2}{8} \\
+                   &= \frac{7}{8}
+\end{align*}
+
+\paragraph{(b)} ~\\
+\begin{align*} 
+P(A' \cap B' \cap C') &= 1 - P(A \cup B \cup C) \\
+                      &= 1 - \frac{7}{8} \\
+                      &= \frac{1}/{8}
+\end{align*}
+
+\paragraph{Solution 4:}
+Chapter 1, Exercise 23
+
+\paragraph{(a)} ~\\
+\begin{align*}
+P("BothAreOn") &= P(A \cap B) \\
+               &= P(A) + P(B) - P(A \cup B) \\
+               &= 0.4 + 0.3 - 0.5 \\
+               &= 0.2
+\end{align*}
+
+\paragraph{(b)} ~\\
+\begin{align*}
+P("ColorSetOnAndOtherOff") &= P(A \cap B') \\
+                           &= P(A) - P(A \cap B) \\
+                           &= 0.4 - 0.2 \\
+                           &= 0.2
+\end{align*}
+
+\paragraph{(c)} ~\\
+\begin{align*}
+P("ExactlyOneIsOn") &= P((A \cap B') \cup (B \cap A'))  \\
+                    &= P(A \cap B') + P(B \cap A') \\
+                    &= 0.2 + (P(B) - P(B \cap A)) \\
+                    &= 0.2 + (0.3 - 0.2) \\
+                    &= 0.3
+\end{align*}
+
+\paragraph{(d)} ~\\
+\begin{align*}
+P("NeitherSetIsOn") &= P(A' \cap B') \\
+                    &= 1 - P(A \cup B) \\
+                    &= 1 - 0.5 \\
+                    &= 0.5
+\end{align*}
+
+\paragraph{Solution 5:}
+Chapter 1, Exercise 25
+
+\paragraph{Solution 6:}
+Chapter 1, Exercise 32
+
+\paragraph{Solution 7:}
+Chapter 1, Exercise 37
+
+\paragraph{Solution 8:}
+Chapter 1, Exercise 46
+
+\paragraph{Solution 9:}
+Chapter 1, Exercise 41
+
+
+\end{document}
