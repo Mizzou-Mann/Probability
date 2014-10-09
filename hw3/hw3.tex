@@ -18,57 +18,64 @@
 \paragraph{Solution 1:}
 Chapter 2, Exercise 3
 
+\paragraph{(a)} ~\\
+\begin{align*}
+f(x) = P[X=x|normal\;coin] + P[X=x|2heads\;coin]
+\end{align*}
+\begin{align*}
+P[X=0|normal\;coin] &= {3 \choose 0} \cdot \frac{1}{8} \cdot \frac{2}{3} = \frac{1}{12}\\
+P[X=1|normal\;coin] &= {3 \choose 1} \cdot \frac{1}{8} \cdot \frac{2}{3} = \frac{1}{4}\\
+P[X=2|normal\;coin] &= {3 \choose 2} \cdot \frac{1}{8} \cdot \frac{2}{3} = \frac{1}{4}\\
+P[X=3|normal\;coin] &= {3 \choose 3} \cdot \frac{1}{8} \cdot \frac{2}{3} = \frac{1}{12}
+\end{align*}
+\begin{align*}
+P[X=0|2heads\;coin] = P[X=1|2heads\;coin] = P[X=2|2heads\;coin] = 0
+\end{align*}
+\begin{align*}
+P[X=3|2heads\;coin] = {3 \choose 3} \cdot (1) \cdot \frac{1}{3} = \frac{1}{3}
+\end{align*}
+
+\begin{tabular}{r | c c c c}
+$x$ & 0 & 1 & 2 & 3 \\
+\hline
+$f(x)$ & $^1/_{12}$ & $^1/_4$ & $^1/_4$ & $^{5}/_{12}$
+\end{tabular}
+
+\paragraph{(b)} ~\\
+\vspace{2 cm}
+
 \paragraph{Solution 2:}
 Chapter 2, Exercise 8
+\paragraph{(a)} ~\\
+\begin{align*}
+f(x) &= F(x) - F(x-1)\\
+     &= 1-(1/2)^{x+1} - \left(1-(1/2)^{x+1-1}\right)\\
+     &= (1/2)^{x} - (1/2)^{x+1}\\
+     &= 2 \times (1/2)^{x+1} - (1/2)^{x+1}\\
+     &= (1/2)^{x+1}
+\end{align*}
+
+\paragraph{(b)} ~\\
+\begin{align*}
+P[10<x \leq 20] &= F(20) - F(10) \\
+				&= 1 - \left(\frac{1}{2}\right)^{20+1} - \left(1-\left(\frac{1}{2}\right)^{10+1}\right)\\
+				&= - \left(\frac{1}{2}\right)^{21} + \left(\frac{1}{2}\right)^{11}\\
+				&= \frac{2^{10}-1}{2^{21}}\\
+				&= 0.0004878
+\end{align*}
+\paragraph{(c)} ~\\
+\vspace{3 cm}
 
 \paragraph{Solution 3:}
 Chapter 2, Exercise 11
+\begin{align*}
+X = the \; amount \; received\\
+\\
+EX = \frac{1+2+3+4+5+6}{6} = 3.5
+\end{align*}
 
-\paragraph{Solution 4:}
-Chapter 2, Exercise 13
+The amount the player should pay for rolling to make it a fair game is \$3.5.
 
-\paragraph{Solution 5:}
-Chapter 2, Exercise 18
 
-\paragraph{Solution 6:}
-Chapter 2, Exercise 24
-
-\paragraph{Solution 7:}
-Chapter 2, Exercise 36
-
-\paragraph{Solution 8:}
-Chapter 3, Exercise 4
-
-\paragraph{Solution 9:}
-Chapter 3, Exercise 8
-
-\paragraph{(a)}
-
-\paragraph{Solution 10:}
-Chapter 3, Exercise 13
-
-\paragraph{(c)}
-
-\paragraph{Solution 11:}
-Chapter 3, Exercise 14
-
-\paragraph{Solution 12:}
-Chapter 3, Exercise 17
-
-\paragraph{(a)}
-
-\paragraph{(c)}
-
-\paragraph{Solution 13:}
-Chapter 3, Exercise 18
-
-\paragraph{(a)}
-
-\paragraph{(c)}
-
-\paragraph{(e)}
-
-\paragraph{Solution 14:}
-Chapter 3, Exercise 19
 
 \end{document}
